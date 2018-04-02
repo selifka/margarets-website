@@ -48,10 +48,9 @@ button {
 }
 
 .banner-btn {
-    background: transparent;
-    color: #fff;
-    border-color:#fff !important;
-    padding: 10px 30px !important;
+    background: #000;
+    color: #ffffff;
+    border-color: #fff;
 }
 
 .banner-btn:hover {
@@ -126,9 +125,13 @@ hr {
 
 /****** Banner *******/
 .banner {
-    background-color: #111517;
-    padding-top: 15%;
-    padding-bottom: 15%;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 90% center;
+    background-attachment: fixed;
+    padding-top: 20%;
+    padding-bottom: 20%;
 }
 
 .banner-fonts h1 {
@@ -156,7 +159,7 @@ hr {
 
 
 /******** Experience ***********/
-.experience-sec {
+.education-sec {
     position: relative;
     padding-top: 90px;
     padding-bottom: 5%;
@@ -300,17 +303,8 @@ hr {
 .skills {
     padding-top: 90px;
     padding-bottom: 10%;
-    background-color: #111517;
 }
 
-.skills h2 {
-    color: #fff !important;
-}
-
-.skills hr {
-    background-color: #fff !important;
-    height: 1.1px !important;
-}
 
 /********** Project Section **********/
 .project {
