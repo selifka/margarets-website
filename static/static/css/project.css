@@ -1,0 +1,371 @@
+/********** Common Setting **********/
+body, html {
+    position: relative;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+h1 {
+    font-size: 4.5rem !important;
+    letter-spacing: 12px !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+h2 {
+    font-size: 2.5rem !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+h3 {
+    font-size: 1.8rem !important;
+    font-family: 'Shadows Into Light', cursive !important;
+}
+
+h4 {
+    font-size: 1.5rem !important;
+    letter-spacing: 8px !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+/****** Buttons *******/
+.custom-btn {
+    padding: 10px 20px !important;
+    border-radius: 0 !important;
+    transition: .4s ease-in-out !important;
+}
+
+.custom-btn:hover {
+    text-decoration: none;
+    transform: translateY(-5px);
+}
+
+.custom-btn-wide {
+    width: 100%;
+}
+
+.banner-btn {
+    background: transparent;
+    color: #fff;
+    border-color:#fff !important;
+    padding: 10px 30px !important;
+}
+
+.banner-btn:hover {
+    color: #fff;
+    background-color: #0dbab1;
+    border-color: #0dbab1 !important;
+}
+
+.resume-btn {
+    background: #000;
+    color: #ffffff;
+    border-color: #fff;
+}
+
+.resume-btn:hover {
+    color: #ffffff;
+    background: #1c99a2;
+}
+
+hr {
+    height: 1.5px !important;
+    width: 65px;
+    position: relative;
+    background: #000000;
+    margin-top: 15px !important;
+    margin-bottom: 50px !important;
+}
+
+/************ Breakpoints 1rem = 16px *****************/
+/* Small devices (landscape phones, 544px and up) */
+@media (max-width: 544px) { 
+    .banner { padding-top: 40% !important; padding-bottom: 30% !important; } 
+    h1 {font-size:3rem !important; 
+        letter-spacing: 1px !important;}
+    h2 {font-size:2.5rem !important;}
+    h3 {font-size:1.5rem !important;}
+    .custom-btn {padding: 5px 10px !important;}
+}
+ 
+
+/****** NAVBAR *******/
+.navbar {
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: #111517;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.navbar-brand {
+    font-family: 'Shadows Into Light', cursive !important;
+    text-transform: none;
+    font-size: 25px !important;
+}
+
+.navbar-brand:hover {
+    color: #0dbab1 !important;
+}
+
+.navbar .navbar-nav > li > a {
+    color: #ffffff !important;
+}
+
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+    color: #0dbab1 !important;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active {
+    color: #0dbab1 !important;
+}
+
+/****** Banner *******/
+.banner {
+    background-color: #111517;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+.banner-fonts h1 {
+    color: #fff !important;
+}
+
+.banner-fonts h3 {
+    color: grey !important;
+}
+
+/********** about me skew **********/
+.about {
+    position: relative;
+    background-color: #ddeff8;
+    padding-top: 80px;
+    padding-bottom: 5%;
+}
+
+.about img {
+    display: block;
+    max-width: 100%;
+    height: 350px;
+    width: 400px;
+}
+
+
+/******** Experience ***********/
+.experience-sec {
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 5%;
+    background-color: white;
+}
+    /****** Timeline *******/
+    .timeline{
+        list-style: none;
+        width: 100%
+    }
+
+    .timeline h1, .timeline h2, .timeline h3, .timeline h4 {
+        line-height: inherit;
+    }
+
+    /***Adds a left margin for the timeline***/
+    .timeline-item{
+        padding-left: 40px;
+        position: relative;
+    }
+
+    /*----- TIMELINE MARKER -----*/
+    .timeline-marker {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .timeline-marker:before {
+        content: "";
+        position: absolute;
+        left: -13px;
+        width: 40px;
+        height: 40px;
+        top: 10px;
+        border: 2px solid #000000;
+        background-color: white;
+        text-align: center;
+        transform: rotate(45deg);
+        z-index: 1;
+    }
+
+    .timeline-marker:after {
+        content: "";
+        width: 2px;
+        background: #000;
+        position: absolute;
+        top: 5px;
+        bottom: 0;
+        left: 6px;
+    }
+
+    .timeline-item:last-child .timeline-marker:after {
+        content: none;
+    }
+
+    /*----- TIMELINE CONTENT -----*/
+    .timeline-content {
+        padding-bottom: 40px;
+    }
+    .timeline-content p:last-child {
+        margin-bottom: 0;
+    }   
+
+    /****Centered timeline****/
+    @media (min-width: 992px) {
+        .timeline-centered,
+        .timeline-centered .timeline-item,
+        .timeline-centered .timeline-info,
+        .timeline-centered .timeline-marker,
+        .timeline-centered .timeline-content {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        .timeline-centered .timeline-item {
+            padding-bottom: 40px;
+            overflow: hidden;
+        }
+
+        .timeline-centered .timeline-marker {
+            position: absolute;
+            left: 50%;
+            margin-left: -7.5px;
+        }
+
+        .timeline-centered .timeline-info,
+        .timeline-centered .timeline-content {
+            width: 50%;
+        }
+
+        .timeline-centered > .timeline-item:nth-child(odd) .timeline-info {
+            float: left;
+            text-align: right;
+            padding-right: 30px;
+        }
+
+        .timeline-centered > .timeline-item:nth-child(odd) .timeline-content {
+            float: right;
+            text-align: left;
+            padding-left: 30px;
+        }
+
+        .timeline-centered > .timeline-item:nth-child(even) .timeline-info {
+            float: right;
+            text-align: left;
+            padding-left: 30px;
+        }
+
+        .timeline-centered > .timeline-item:nth-child(even) .timeline-content {
+            float: left;
+            text-align: right;
+            padding-right: 30px;
+        }
+
+        .timeline-centered > .timeline-item.period .timeline-content {
+            float: none;
+            padding: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .timeline-centered .timeline-item.period {
+            padding: 50px 0 90px;
+        }
+
+        .timeline-centered .period .timeline-marker:after {
+            height: 30px;
+            bottom: 0;
+            top: auto;
+        }
+
+        .timeline-centered .period .timeline-title {
+            left: auto;
+        }
+    }
+
+/**************** Skills ****************/
+.skills {
+    padding-top: 90px;
+    padding-bottom: 10%;
+    background-color: #111517;
+}
+
+.skills h2 {
+    color: #fff !important;
+}
+
+.skills hr {
+    background-color: #fff !important;
+    height: 1.1px !important;
+}
+
+/********** Project Section **********/
+.project {
+    background-color: #ddeff8;
+    padding-top: 90px;
+    padding-bottom: 5%;
+}
+
+.card-img-top{
+    -webkit-transition: ease .5s;
+    -moz-transition: ease .5s;
+    transition: ease .5s;
+}
+
+.card-img-top:hover{
+    opacity: .5;
+}
+
+/********** contact **********/
+#contact {
+    padding-top: 90px;
+    padding-bottom: 10%;
+    background: #ffffff;
+}
+
+#contact h2, p {
+    color: #000000;
+}
+
+/******* Footer *************/
+#footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #111517;
+}
+
+/********** social **********/
+#social-media a {
+    width: 40px;
+    height: 40px;
+    border-radius: 99%;
+    background-color: #ddeff8;
+    transition: .4s ease;
+}
+
+#social-media a i {
+    color: #000;
+    font-size: 1.2rem;
+    line-height: 40px;
+}
+
+#social-media a:hover {
+    background: #000;
+}
+
+#social-media a:hover i {
+    color: #ffffff;
+}
