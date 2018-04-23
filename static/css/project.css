@@ -5,9 +5,10 @@ body, html {
 }
 
 h1 {
-    font-size: 4.5rem !important;
+    font-size: 8rem !important;
     letter-spacing: 12px !important;
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Shadows Into Light', cursive !important;
+    font-weight: bold !important;
 }
 
 h2 {
@@ -158,7 +159,7 @@ hr {
 }
 
 
-/******** Experience ***********/
+/******** Education ***********/
 .education-sec {
     position: relative;
     padding-top: 90px;
@@ -298,6 +299,14 @@ hr {
             left: auto;
         }
     }
+
+/************* Experience **************/
+.experience-sec {
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 5%;
+    background-color: #ddeff8;
+}
 
 /**************** Skills ****************/
 .skills {
